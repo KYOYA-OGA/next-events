@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'M PLUS 1p', sans-serif;
+    background-color: #e6e6ef;
+  }
+}
+
+@layer components {
+  .btn-red {
+    @apply px-4 py-2 text-sm font-bold text-center text-white bg-red-500 rounded cursor-pointer md:text-base hover:bg-red-700;
+  }
+  .btn-black {
+    @apply px-3 py-2 text-sm text-center text-white bg-gray-700 rounded cursor-pointer hover:bg-gray-900;
+  }
+}
+
+@layer utilities {
+  .add-event-input {
+    @apply w-full px-3 py-3 text-sm bg-white border-0 rounded shadow outline-none focus:outline-none focus:ring-2 ring-gray-600;
+  }
+}
